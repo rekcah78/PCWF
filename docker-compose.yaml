@@ -2,6 +2,8 @@ version: '3'
 services:
   pcwf:
     image: rekcah/pcwf:latest
+    logging:
+      driver: none
     ports:
       - "8080:8080"
     restart: always
